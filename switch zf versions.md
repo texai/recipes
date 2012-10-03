@@ -1,3 +1,4 @@
+<code>
 texai@kalimdor:~/bin$ cat /opt/lampp/etc/php.ini | grep include_path
 include_path = ".:/opt/zf/library:/opt/lampp/lib/php"
 
@@ -18,4 +19,4 @@ case $1 in
     '2' )
         sudo ln -s /opt/ZendFramework-2.0.2 /opt/zf ;;
 esac
-
+</code>
