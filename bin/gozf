@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ -L /opt/zf ];
+then
+    sudo rm /opt/zf
+fi
+
+case $1 in
+    '1' )
+        sudo ln -s /opt/ZendFramework-1.11.11 /opt/zf ;; 
+    '2' )
+        sudo ln -s /opt/ZendFramework-2.0.2 /opt/zf ;;
+esac
+
