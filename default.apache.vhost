@@ -1,0 +1,19 @@
+#:%s/foo/bar/gc
+
+<VirtualHost *:80>
+    ServerAdmin ernestex@gmail.com
+    # DocumentRoot "/opt/lampp/htdocs"
+    DocumentRoot "/home/texai/www/taskman/html"
+    ServerName localhost
+    ServerAlias kalimdor
+    ErrorLog logs/localhost-error_log
+    CustomLog logs/localhost-access_log common
+    # <Directory "/opt/lampp/htdocs">
+    <Directory "/home/texai/www/taskman/html">
+        Options Indexes FollowSymLinks ExecCGI Includes
+        AllowOverride All
+        Order allow,deny
+        Allow from all
+    </Directory>
+</VirtualHost>
+
